@@ -1,0 +1,173 @@
+/* assets/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Georgian:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Font utama */
+    line-height: 1.6;
+    background-color: #e8f5e9; /* Warna background lebih cerah/fun */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ubah ke flex-start agar konten di atas */
+    min-height: 100vh; /* Pastikan minimal tinggi viewport */
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden; /* Pastikan shadow tidak terpotong */
+}
+
+header {
+    background-color: #4a6f5e; /* Warna header lebih 'alam' */
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 5px solid #66bb6a; /* Garis pemisah fun */
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive; /* Font yang lebih playful */
+    margin: 0 0 0.5rem 0;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    padding: 2rem;
+}
+
+.card {
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+}
+
+h2 {
+    color: #344e41; /* Warna hijau gelap */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+    border: 2px solid #a8dadc; /* Border lebih cerah */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    border-color: #457b9d; /* Border fokus lebih menarik */
+    box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.2);
+    outline: none;
+}
+
+button[type="submit"], .button {
+    display: inline-block;
+    background-color: #66bb6a; /* Warna hijau cerah */
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 150, 0, 0.2);
+}
+
+button[type="submit"]:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background-color: #4caf50;
+    transform: translateY(-2px);
+}
+
+#download-btn {
+    background-color: #457b9d; /* Warna biru lebih kalem */
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#download-btn:hover {
+    background-color: #3c6e8f;
+    transform: translateY(-2px);
+}
+
+.result-section p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#certificate-canvas {
+    display: block; /* Agar di tengah */
+    margin: 0 auto 1.5rem auto; /* Tengah secara horizontal */
+    max-width: 100%; /* Pastikan tidak melebihi lebar kontainer */
+    height: auto; /* Jaga rasio aspek */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsif sederhana */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+    button[type="submit"], .button {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}

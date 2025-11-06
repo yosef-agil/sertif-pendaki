@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Sertifikat Pendaki Seru!</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>⛰️ Sertifikat Pendakian Seru! 🏕️</h1>
+            <p>Rayakan pencapaianmu menaklukkan puncak! Isi data, buat sertifikat, dan unduh kenanganmu.</p>
+        </header>
+
+        <main>
+            <section class="card form-section">
+                <h2>Yuk, Buat Sertifikatmu!</h2>
+                <form id="certificate-form">
+                    <div class="form-group">
+                        <label for="nama">Nama Pendaki:</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Contoh: Sang Petualang">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gunung">Pilih Gunung yang Ditaklukkan:</label>
+                        <select id="gunung" name="gunung" required>
+                            <option value="">-- Pilih Puncakmu --</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" id="generate-btn">🌟 Buat Sertifikatnya! 🌟</button>
+                </form>
+            </section>
+
+            <section class="card result-section" id="result" style="display: none;">
+                <h2>🎉 Selamat, Sertifikatmu Siap! 🎉</h2>
+                <p>Lihat hasilnya di bawah. Klik tombol untuk mengunduh.</p>
+                
+                <canvas id="certificate-canvas" width="800" height="1200" style="width: 100%; height: auto; max-width: 400px; border: 1px solid #ccc;"></canvas>
+                
+                <a id="download-btn" class="button" href="#" download="sertifikat-pendaki-seru.png">
+                    ⬇️ Unduh Sertifikat (PNG) ⬇️
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
